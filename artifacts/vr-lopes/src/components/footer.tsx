@@ -90,8 +90,12 @@ export function Footer() {
         </div>
 
         {/* Linha de Direitos Autorais e Políticas Legais */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/30">
-          <p>&copy; {new Date().getFullYear()} VR Lopes LTDA. Todos os direitos reservados.</p>
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-white/30">
+          <div className="flex flex-col gap-1 items-center md:items-start text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} VR Lopes LTDA. Todos os direitos reservados.</p>
+            <p>CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Manaus, Amazonas – Brasil</p>
+          </div>
+          
           <div className="flex items-center flex-wrap gap-3">
             <Link href="/lgpd" className="hover:text-white transition-colors">LGPD</Link>
             <span>|</span>
@@ -99,7 +103,22 @@ export function Footer() {
             <span>|</span>
             <Link href="/termos" className="hover:text-white transition-colors">Termos de Uso</Link>
           </div>
-          <p>CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Manaus, Amazonas – Brasil</p>
+
+          <div className="flex items-center gap-2">
+            <span>Desenvolvido pela</span>
+            <a 
+              href="https://poomar.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-85 transition-opacity inline-flex items-center"
+            >
+              <img
+                src="/Poomar-backgroundless.svg"
+                alt="Poomar"
+                className="h-7 w-auto object-contain brightness-0 invert"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
