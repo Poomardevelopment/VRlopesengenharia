@@ -30,6 +30,7 @@
         "./src/*"
       ],
       "@assets/*": [
+        "./attached_assets/*",
         "../../attached_assets/*"
       ]
     },
